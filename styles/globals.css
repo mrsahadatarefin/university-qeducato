@@ -25,3 +25,37 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+/* navbar */
+.navbar-content {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 32%;
+  background: #ff7350;
+  top: 0;
+  z-index: -1;
+  left: -25px;
+  transform: skew(30deg);
+}
+
+.nav {
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 0.5;
+  padding: 0 10px;
+}
+.nav::after {
+  content: "";
+  position: absolute;
+  background-color: #ff7350;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+.nav:hover::after {
+  width: 100%;
+}

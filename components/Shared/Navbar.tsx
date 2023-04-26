@@ -4,6 +4,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <div>
+      {/* navbar header */}
       <div className="bg-[#125875] text-black flex justify-between lg:pr-[100px]">
         <div className="flex items-center bg-[#FF7350] text-white lg:px-[100px] py-7">
           <h2>Follow Us:- </h2>
@@ -43,6 +44,62 @@ const Navbar = () => {
             <div>
               <h2 className="text-sm">Email Now!</h2>
               <p className="font-bold">info@example.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* navbar */}
+      <div className="bg-white text-black">
+        <div className="mx-[100px] flex justify-between items-center">
+          <Link href={"/"}>
+            <img src="/web-logo.png" alt="website logo" className="w-[260px]" />
+          </Link>
+          <div className="text-xl flex">
+            <div className="flex gap-4">
+              <Link
+                className="nav my-4 hover:text-[#FF7350] duration-300"
+                href={"/"}
+              >
+                Home
+              </Link>
+              <Link
+                className="nav my-4 hover:text-[#FF7350] duration-300"
+                href={"/about"}
+              >
+                About Us
+              </Link>
+              <Link
+                className="nav my-4 hover:text-[#FF7350] duration-300"
+                href={"/courses"}
+              >
+                Courses
+              </Link>
+              <Link
+                className="nav my-4 hover:text-[#FF7350] duration-300"
+                href={"/pages"}
+              >
+                Pages
+              </Link>
+              <Link
+                className="nav my-4 hover:text-[#FF7350] duration-300"
+                href={"/blog"}
+              >
+                Blog
+              </Link>
+              <Link
+                className="nav my-4 hover:text-[#FF7350] duration-300"
+                href={"/contact"}
+              >
+                Contact
+              </Link>
+            </div>
+            <div className="flex items-center">
+              <Link
+                className="bg-[#FF7350] hover:bg-[#125875] duration-300 text-white py-4 px-6 font-semibold"
+                href={"/admission-open"}
+              >
+                ADMISSION OPEN
+              </Link>
             </div>
           </div>
         </div>

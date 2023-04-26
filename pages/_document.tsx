@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       {/* <Head /> */}
       <Head>
-        <title>Hello</title>
+        <title>Qeucato</title>
         <script
           src="https://kit.fontawesome.com/ba1543d48e.js"
           crossOrigin="anonymous"
