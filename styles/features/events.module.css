@@ -1,0 +1,80 @@
+.events_main{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.our_event{
+    color: tomato;
+    font-size: 23px;
+    font-weight: 700;
+}
+.upcoming{
+    font-size: 46px;
+    font-weight: 700;
+}
+.event img{
+    width: 380px;
+    height: 300px;
+    position: relative;
+}
+.event{
+    width: 380px;
+    height: 560px;
+    background-color: rgb(219, 241, 250);
+}
+.event h2{
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px 0;
+    padding-top: 20px;
+}
+.date{
+    width: 100px;
+    height: 70px;
+    background-color: tomato;
+    position: absolute;
+    bottom: 246px;
+    left: 20px;
+    color: white;
+    text-align: center;
+}
+.date h5{
+    font-size: 25px;
+    font-weight: 700;
+}
+.date p{
+    font-size: 13px;
+}
+.address {
+    color: tomato;
+}
+.event:hover {
+    background-color: rgb(15, 25, 42);
+    transition: .6s;
+    color: white;
+    cursor: pointer;; 
+}
+/* media */
+@media screen and (max-width: 400px) {
+    .event,.event img{
+        width: 300px;
+    }
+}
+/* scholar-component */
+.scholar{
+    background-color: rgb(15, 25, 42);
+    color: white;
+
+}
+.scholar h1{
+    font-size: 45px;
+    font-weight: 700;
+    padding: 10px 0;
+}
+.scholar p{
+    font-size: 19px;
+}
+.scholar button{
+    background-color: tomato;
+    margin-top: 50px;
+    color: white;
+}
