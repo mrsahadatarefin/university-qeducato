@@ -13,12 +13,12 @@ const Banner = () => {
           <h2 className="text-6xl w-3/5 mt-7 font-bold text-white">
             Education is the best key success in life
           </h2>
-          <p className=" text-white w-1/2 mt-3 font-semibold">
+          <p className=" text-white w-1/2 mt-7 font-semibold">
             Whether you're a student, a working professional, or someone looking
             to enhance your knowledge and skills, our online education programs
             can help you unlock your full potential and achieve your dreams.
           </p>
-          <button className="btn btn-outline mt-3 text-[#FF7350] hover:bg-[#FF7350]">
+          <button className="btn btn-outline mt-5 text-[#FF7350] hover:bg-[#FF7350]">
             Contact Us
           </button>
         </div>
