@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Inter } from "next/font/google";
 import Feautures from "@/components/features/Feautures";
 import { GetServerSideProps, GetStaticProps } from "next";
@@ -27,7 +26,7 @@ export default function Home({data}: any) {
 //events fetch data
 
 // export const getServerSideProps: GetStaticProps = async ()=>{
-//   const res = await fetch('events.json')
+//   const res = await fetch('https://jsonplaceholder.typicode.com/users')
 //   const data = await res.json()
 //   return{
 //       props:{

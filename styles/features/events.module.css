@@ -5,21 +5,23 @@
 .our_event{
     color: tomato;
     font-size: 23px;
-    font-weight: 700;
+    margin: 0 auto;
+    width: 300px;
+
 }
 .upcoming{
     font-size: 46px;
     font-weight: 700;
 }
 .event img{
-    width: 380px;
+    width: 390px;
     height: 300px;
     position: relative;
 }
 .event{
-    width: 380px;
+    width: 390px;
     height: 560px;
-    background-color: rgb(219, 241, 250);
+    background-color: rgb(220, 213, 213);
 }
 .event h2{
     font-size: 25px;
@@ -77,4 +79,26 @@
     background-color: tomato;
     margin-top: 50px;
     color: white;
+}
+
+/* eventsDetails-components */
+.header{
+    height: 500px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.20)),url('https://www.exeter.ac.uk/media/universityofexeter/studying/images/responsiveimages/16095.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu{
+    width: 220px;
+    height: 70px;
+    background-color: tomato;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 100px;
+}
+.menu p{
+  margin-top: 20px;
+   
 }
