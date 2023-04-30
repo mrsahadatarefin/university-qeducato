@@ -3,8 +3,6 @@ import { GetStaticProps } from "next"
 import Link from "next/link"
 
 
-//https://jsonplaceholder.typicode.com/users
-
 export const getServerSideProps: GetStaticProps = async ()=>{
   const res = await fetch('http://localhost:3000/api/data')
   const data = await res.json()

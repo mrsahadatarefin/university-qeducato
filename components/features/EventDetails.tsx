@@ -13,41 +13,20 @@ import Link from 'next/link';
 import { GetStaticPaths, GetStaticProps } from 'next';
 
 
-// export const getStaticPaths : GetStaticPaths = async()=>{
-//         const res = await fetch('http://localhost:3000/api/data')
-//         const data = await res.json()
-
-//         const paths = data.info.map(({event}: any) =>{
-//             return{
-            
-//                 params: {id: event.id.toString()}
-//             }
-//         })
-
-//         return{
-//                 data,
-//             paths,
-//             fallback: false 
-//         }
-      
-// }
-
-
-
-// export const  getStaticProps= async(context: any)=>{
-//     const id = context.params.id
-//      const res = await fetch(`http://localhost:3000/api/data`)
-//     const data = await res.json()
-
-//     return{
-//         props:{
-//            data
-//         }
-//     }
-// }
-
 const EventDetails = ({data}: any) => {
     //console.log(data);
+
+//     let countdown = new Date("Oct 16. 2021 00:00:00").getTime()
+//     let x = setInterval(function(){
+//         let now = new Date().getTime()
+//         let distact = countdown - now
+
+//     const days = Math.floor(distact / (1000 * 60 * 60 * 24))
+//     const hours = Math.floor((distact % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+//     const mints = Math.floor((distact % (1000 * 60 * 60)) / (1000 * 60))
+//     const secound = Math.floor((distact % (1000 * 60)) /  1000)
+
+// },1000)
     
 
     const time = new Date().toLocaleTimeString()
@@ -72,7 +51,7 @@ const EventDetails = ({data}: any) => {
                             <p className='py-4 text-gray-500'>The world of search engine optimization is complex and ever-changing, but you can easily understand the basics, and even a small amount of SEO knowledge can make a big difference. Free SEO education is also widely available on the web, including in guides like this! (Woohoo!) This guide is designed to describe all major aspects of SEO, from finding the terms and phrases (keywords) that can generate qualified traffic to your website, to making your site friendly to search engines, to building links and marketing the unique value of your site.Etiam pharetra erat sed fermentum feugiat velit mauris egestas quam ut erat justo.</p>
                             <div className={`${styles.timeset} text-white py-6 mt-5 flex flex-wrap`}>
                             {/* {time} */}
-                            <h2>200 <br /> <span>Days</span> </h2>
+                            <h2>100 <br /> <span>Days</span> </h2>
                             <h2>8 <br /> <span>Hours</span> </h2>
                             <h2>30 <br /> <span>Minutes</span> </h2>
                             <h2>50 <br /> <span>Seconds</span> </h2>
@@ -95,12 +74,10 @@ const EventDetails = ({data}: any) => {
                                                                               
                              <p className='py-2 flex'><span className='mx-3'><CiMail /> </span> yourmail@gmail.com</p>                                                    
                              <p className='py-2 flex'><span className='mx-3'> <IoMdCall /> </span> +91 705 2101 786</p>     
-                           <button className='btn btn-md text-white w-52 lg:mx-12 mx-1 '>Buy Ticket <small className='text-2xl font-semibold mx-3'><BsArrowRight /></small> </button>
-                          
+                           <button className='btn btn-md text-white w-52 lg:mx-12 mx-1 '>Buy Ticket <small className='text-2xl font-semibold mx-3'><BsArrowRight /></small> </button>                       
                         </div>
                     </div>
-                </div>
-         
+                </div>            
         </div>
     );
 };

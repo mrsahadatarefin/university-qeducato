@@ -5,7 +5,7 @@ import {FaGraduationCap} from 'react-icons/fa'
 import {BsArrowRight} from 'react-icons/bs'
 
 const Events = ({data}: any) => {
-    console.log(data);
+    //console.log(data);
     
     return (
         <div>
@@ -25,9 +25,9 @@ const Events = ({data}: any) => {
                     </div>
                     <div className={`${styles.card_info} p-4`}>
                     <h2>{event.name}</h2>
-                    <p className='text-gray-500'>{event.info.slice(0,110)}..</p>
+                    <p className=''>{event.info.slice(0,110)}..</p>
                     <div className={`flex py-2 mt-2`}>
-                        <p className='text-gray-500'>{event.date} </p> <span className='mx-2 mt-1'><BsArrowRight /></span>
+                        <p className=''>{event.date} </p> <span className='mx-2 mt-1'><BsArrowRight /></span>
                         <p className={`${styles.address} lg:mx-0 mx-0 font-semibold`}>{event.address}</p>
                     </div>
                     </div>
