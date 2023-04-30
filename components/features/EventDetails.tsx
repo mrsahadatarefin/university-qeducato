@@ -10,9 +10,45 @@ import {BsFacebook} from 'react-icons/bs'
 import {BsInstagram} from 'react-icons/bs'
 import {FaTwitter} from 'react-icons/fa'
 import Link from 'next/link';
+import { GetStaticPaths, GetStaticProps } from 'next';
 
 
-const EventDetails = () => {
+// export const getStaticPaths : GetStaticPaths = async()=>{
+//         const res = await fetch('http://localhost:3000/api/data')
+//         const data = await res.json()
+
+//         const paths = data.info.map(({event}: any) =>{
+//             return{
+            
+//                 params: {id: event.id.toString()}
+//             }
+//         })
+
+//         return{
+//                 data,
+//             paths,
+//             fallback: false 
+//         }
+      
+// }
+
+
+
+// export const  getStaticProps= async(context: any)=>{
+//     const id = context.params.id
+//      const res = await fetch(`http://localhost:3000/api/data`)
+//     const data = await res.json()
+
+//     return{
+//         props:{
+//            data
+//         }
+//     }
+// }
+
+const EventDetails = ({data}: any) => {
+    //console.log(data);
+    
 
     const time = new Date().toLocaleTimeString()
 

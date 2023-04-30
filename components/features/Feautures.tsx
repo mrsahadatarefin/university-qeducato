@@ -16,7 +16,7 @@ const Feautures = () => {
                         </div>                          
                         <div className="">               
                         <h2>Skilled Teachers</h2>
-                        <p className='py-2'>Special wedding garments are often worn, and the ceremony is sttimes <br /> followed by a wedding reception. Music, poetry, prayers, or readings from.</p>
+                        <p className='py-2'>Skilled teachers are highly trained and experienced educators who possess <br /> a wide range of teaching skills and strategies to effectively engage. </p>                       
                         </div> 
                     </div>
                     <div className={`${styles.logo_text} flex flex-wrap gap-5 py-4 p-2 lg:mx-6`}>
@@ -25,7 +25,7 @@ const Feautures = () => {
                         </div>
                         <div className="">                     
                         <h2>Affordable Courses</h2>
-                        <p className='py-2'>Special wedding garments are often worn, and the ceremony is sttimes <br /> followed by a wedding reception. Music, poetry, prayers, or readings from.</p>
+                        <p className='py-2'>There are many affordable courses available for individuals  who want to <br />learn a new skill or further their education.  </p>
                         </div> 
                     </div>
                     <div className={`${styles.logo_text} flex flex-wrap gap-5 py-4 p-2 lg:mx-6`}>
@@ -34,7 +34,7 @@ const Feautures = () => {
                         </div>
                         <div className="">               
                         <h2>Efficient & Flexible</h2>
-                        <p className='py-2'>Special wedding garments are often worn, and the ceremony is sttimes <br /> followed by a wedding reception. Music, poetry, prayers, or readings from.</p>
+                        <p className='py-2'>Efficient and flexible refer to the ability to accomplish tasks or  goals in<br /> a productive and adaptable manner. Here are some ways to be efficient.</p>
                         </div>  
                     </div>
                 </div>
