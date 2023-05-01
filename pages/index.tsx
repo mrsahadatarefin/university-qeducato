@@ -9,6 +9,10 @@ import LanguageSec from "../components/LanguageSec/LanguageSec";
 import UpComing from "../components/UpComing/UpComing";
 import InstructorSec from "../components/InstructorSec/InstructorSec";
 import VisitCenter from "../components/VisitCenter/VisitCenter";
+import Navbar from "@/components/Shared/Navbar";
+import Banner from "@/components/Home/Banner";
+import Footer from "@/components/Shared/Footer";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +29,7 @@ export default function Home({ data }: any) {
       <UpComing data={data}></UpComing>
       <InstructorSec data={data}></InstructorSec>
       <VisitCenter></VisitCenter>
+
     </main>
   );
 }
