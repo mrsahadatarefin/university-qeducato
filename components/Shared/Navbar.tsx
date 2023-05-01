@@ -1,8 +1,16 @@
 import Link from "next/link";
 import React, { useState } from "react";
+import auth from "../firebase/firebase.config";
+import { useAuthState } from "react-firebase-hooks/auth";
+import Loading from "./Loading";
+import { signOut } from "firebase/auth";
 
 const Navbar = () => {
   const [closeNavbar, setCloseNavbar] = useState(false);
+  const [user, loading] = useAuthState(auth);
+  if (loading) {
+    return <Loading />;
+  }
   return (
     <div>
       {/* navbar header */}
@@ -44,7 +52,7 @@ const Navbar = () => {
             />
             <div>
               <h2 className="text-sm">Email Now!</h2>
-              <p className="font-bold">info@example.com</p>
+              <p className="font-bold">info@qeducato.com</p>
             </div>
           </div>
         </div>
@@ -93,6 +101,21 @@ const Navbar = () => {
               >
                 Contact
               </Link>
+              {!user ? (
+                <Link
+                  className="nav my-4 hover:text-[#FF7350] duration-300"
+                  href={"/login"}
+                >
+                  Log In
+                </Link>
+              ) : (
+                <button
+                  onClick={() => signOut(auth)}
+                  className="nav my-4 text-red-500 duration-300"
+                >
+                  Sign Out
+                </button>
+              )}
             </div>
             <div className="xl:flex hidden items-center">
               <Link

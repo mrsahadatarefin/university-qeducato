@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <div>
       <div className="relative">
-        <img src="/slider_bg_01.png" alt="banner images" />
+        <img className="w-full" src="/slider_bg_01.png" alt="banner images" />
         <div className="absolute top-14 xl:mx-[100px]">
           <div className="text-white text-2xl flex font-semibold">
             <h1 className="pt-3 pr-3">WELCOME TO QEDUCATO</h1>
