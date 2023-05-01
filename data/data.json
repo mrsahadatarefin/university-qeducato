@@ -1,0 +1,88 @@
+{
+    "data": {
+        "Gimg": [
+            {
+                "id": "1",
+                "img": "https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/protfolio-img01.jpg"
+            },
+            {
+                "id": "2",
+                "img": "https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/protfolio-img02.jpg"
+            },
+            {
+                "id": "3",
+                "img": "https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/protfolio-img03.jpg"
+            },
+            {
+                "id": "4",
+                "img": "https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/protfolio-img04.jpg"
+            },
+            {
+                "id": "5",
+                "img": "https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/protfolio-img05.jpg"
+            },
+            {
+                "id": "6",
+                "img": "https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/protfolio-img06.jpg"
+            },
+            {
+                "id": "7",
+                "img": "https://language-center.ancorathemes.com/wp-content/uploads/2016/10/image-3-1170x659.jpg"
+            },
+            {
+                "id": "8",
+                "img": "https://language-center.ancorathemes.com/wp-content/uploads/2016/10/image-1.jpg"
+            },
+            {
+                "id": "9",
+                "img": "https://language-center.ancorathemes.com/wp-content/uploads/2016/10/image-9.jpg"
+            }
+        ],
+        "UpCorse": [
+            {
+                "id": "1",
+                "price": "620",
+                "name": "General English Fluency",
+                "img": "https://language-center.ancorathemes.com/wp-content/uploads/2016/10/pr1.jpg"
+            },
+            {
+                "id": "2",
+                "price": "340",
+                "name": "Crash Course for Travelers",
+                "img": "https://language-center.ancorathemes.com/wp-content/uploads/2016/10/pr2.jpg"
+            },
+            {
+                "id": "3",
+                "price": "410",
+                "name": "Spanish Past Tenses Review",
+                "img": "https://language-center.ancorathemes.com/wp-content/uploads/2016/10/pr3.jpg"
+            }
+        ],
+        "Instrac": [
+            {
+                "id": "1",
+                "spacial": "English",
+                "name": "Susan Mathews",
+                "img": "https://language-center.ancorathemes.com/wp-content/uploads/2016/10/team-4-370x370.jpg"
+            },
+            {
+                "id": "2",
+                "spacial": "Garman",
+                "name": "Weliam stanly",
+                "img": "https://language-center.ancorathemes.com/wp-content/uploads/2016/10/team-3-370x370.jpg"
+            },
+            {
+                "id": "3",
+                "spacial": "Chinese",
+                "name": "Barbera Rusella",
+                "img": "https://language-center.ancorathemes.com/wp-content/uploads/2016/10/team-2-370x370.jpg"
+            },
+            {
+                "id": "4",
+                "spacial": "Italian",
+                "name": "Brandon Martin",
+                "img": "https://language-center.ancorathemes.com/wp-content/uploads/2016/10/team-1-370x370.jpg"
+            }
+        ]
+    }
+}
