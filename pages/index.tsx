@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
 import WereQeducato from "../components/WereQeducato/WereQeducato";
 import SearchForCourse from "../components/SearchForCourse/SearchForCourse";
 import AdmissionAid from "../components/Admission&Aid/AdmissionAid";
@@ -32,6 +30,7 @@ export default function Home({ data }: any) {
 
     </main>
   );
+
 }
 
 export async function getStaticProps() {
