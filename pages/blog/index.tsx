@@ -27,7 +27,7 @@ const index = () => {
             <div className="w-full md:w-3/4 px-4">
               <img src="https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/inner_b6.jpg" alt="Blog Featured Image" className="mb-8" />
               <div className="prose max-w-none">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iste porro eum autem. Quidem, error! Ab dolorem odit, minima pariatur molestias assumenda unde sequi consequuntur dignissimos praesentium quaerat explicabo dolorum.</p>
+                <p>A healthy environment helps children to stay physically healthy by reducing exposure to harmful pollutants, contaminants, and toxins. For example, clean air, water, and safe living conditions can prevent respiratory diseases, lead poisoning, and other illnesses that can negatively affect children's health..</p>
               </div>
             </div>
             <div className="w-full md:w-1/4 px-4">
@@ -91,7 +91,7 @@ const index = () => {
             <div className="p-6">
               <img className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/inner_b8.jpg" alt="blog" />
               <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-2xl">Planting Seeds in the Hearts of Preschooler.</h1>
-              <p className="mx-auto text-base leading-relaxed text-gray-500 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>{" "}
+              <p className="mx-auto text-base leading-relaxed text-gray-500 text-justify">Model positive behavior: Children learn by observing and imitating adults around them. Therefore, it is essential to model positive behavior, such as kindness, honesty, and respect, to help preschoolers develop these qualities. Teach empathy: Preschoolers need to learn how to understand and share other people's feelings. Teachers and parents can help by reading books, playing games, or role-playing scenarios. </p>{" "}
               <div className="mt-4">
                 <a href="#" className="inline-flex items-center mt-4 font-semibold text-orange-600 lg:mb-0 hover:text-neutral-600" title="read more">
                   {" "}
@@ -102,7 +102,7 @@ const index = () => {
             <div className="p-6">
               <img className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/inner_b9.jpg" alt="blog" />
               <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-2xl">Why children need a Healthy Environment thousand.</h1>
-              <p className="mx-auto text-base leading-relaxed text-gray-500 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>{" "}
+              <p className="mx-auto text-base leading-relaxed text-gray-500 text-justify">Physical health: Children need access to clean air, water, and safe living conditions to maintain their physical health. A healthy environment can reduce exposure to harmful pollutants, contaminants, and toxins that can negatively impact children's health and increase the risk of chronic diseases. Mental health: A healthy environment can positively affect a child's mental health by reducing stress levels and promoting well-being.</p>{" "}
               <div className="mt-4">
                 <a href="#" className="inline-flex items-center mt-4 font-semibold text-orange-600 lg:mb-0 hover:text-neutral-600" title="read more">
                   {" "}
@@ -113,7 +113,7 @@ const index = () => {
             <div className="p-6">
               <img className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/inner_b4.jpg" alt="blog" />
               <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-2xl">Full-day kindergarten in Alberta kindergarten saves.</h1>
-              <p className="mx-auto text-base leading-relaxed text-gray-500 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>{" "}
+              <p className="mx-auto text-base leading-relaxed text-gray-500 text-justify">Improved academic outcomes: Full-day kindergarten provides more time for children to learn and practice skills, leading to improved academic outcomes. Studies have shown that full-day kindergarten students perform better on reading, writing, and math assessments than those in half-day programs. Increased social and emotional development: Full-day kindergarten provides more opportunities.</p>{" "}
               <div className="mt-4">
                 <a href="#" className="inline-flex items-center mt-4 font-semibold text-orange-600 lg:mb-0 hover:text-neutral-600" title="read more">
                   {" "}
