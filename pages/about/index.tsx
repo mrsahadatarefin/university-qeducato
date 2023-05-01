@@ -21,7 +21,7 @@ const about = () => {
     <div>
       {/* Banner */}
       <div className=" relative  saturate-50 ">
-        <Image src={img1} alt="about" className="h-[550px]"></Image>
+        <Image src={img1} alt=" " className="h-[600px] about bg-cover bg-center"></Image>
       </div>
       <div className="  absolute left-[12%] lg:left-[50%] top-[25%]    ">
         <h2 className="text-6xl font-bold text-white "> About Us</h2>
