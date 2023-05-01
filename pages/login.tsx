@@ -45,7 +45,22 @@ const login = () => {
 
   return (
     <div>
-      <div className="min-h-screen flex lg:flex-row-reverse bg-white text-black">
+      <div className="min-h-screen lg:flex   bg-white text-black">
+        <div className="hidden lg:w-1/2 lg:flex bg-gradient-to-r from-[#FFFDFC] via-[#FCE7E6] to-[#FFFDFC] justify-center items-center text-center">
+          <div>
+            <div className="flex justify-center">
+              <img className="w-1/2" src="/login-img.png" alt="login image" />
+            </div>
+            <h2 className="text-3xl font-medium mt-5">Welcome to Qeducato.</h2>
+            <div className="flex justify-center">
+              <p className="text-gray-700 mt-3 w-3/4">
+                Login to your Qeducato education account to access course
+                materials, grades, and other important information. Don't have
+                an account yet? Sign up now to start your educational journey.
+              </p>
+            </div>
+          </div>
+        </div>
         <div className="lg:w-1/2 flex justify-center items-center">
           <div className="w-full max-w-sm">
             <h2 className="text-3xl font-medium">Login to your account</h2>
@@ -95,6 +110,7 @@ const login = () => {
                   <span className="label-text-alt">Forget Password</span>
                 </label>
               </div>
+              {signInErrorMessage}
               <input
                 className="btn bg-red-500 hover:bg-red-600 border-0 text-white w-full max-w-sm mt-5"
                 value="login"
@@ -118,21 +134,6 @@ const login = () => {
                 </button>
               </div>
             </form>
-          </div>
-        </div>
-        <div className="lg:w-1/2 bg-gradient-to-r from-[#FFFDFC] via-[#FCE7E6] to-[#FFFDFC] flex justify-center items-center text-center">
-          <div>
-            <div className="flex justify-center">
-              <img className="w-1/2" src="/login-img.png" alt="login image" />
-            </div>
-            <h2 className="text-3xl font-medium mt-5">Welcome to Qeducato.</h2>
-            <div className="flex justify-center">
-              <p className="text-gray-700 mt-3 w-3/4">
-                Login to your Qeducato education account to access course
-                materials, grades, and other important information. Don't have
-                an account yet? Sign up now to start your educational journey.
-              </p>
-            </div>
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div>
       <div>
-        <div className="bg-[#032E3F] xl:p-[100px] p-10 grid gird-cols-1 xlgrid-cols-12 gap-10 text-white">
+        <div className="bg-[#032E3F] xl:p-[100px] p-10 grid gird-cols-1 xl:grid-cols-12 gap-10 text-white">
           <div className="col-span-4">
             <div className="text-2xl font-bold mb-10">
               <h4>About Us</h4>
@@ -121,7 +121,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="bg-[#FF7350] py-5 text-white font-semibold">
-          <div className="mx-[100px] flex justify-between">
+          <div className="xl:mx-[100px] mx-5 xl:flex justify-between">
             <img className="h-7" src="/f_logo.png" alt="" />
             <div>Copyright &#169; Qeducato {year}. All right reserved.</div>
           </div>

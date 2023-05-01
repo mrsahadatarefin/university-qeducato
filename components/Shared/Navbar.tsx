@@ -59,7 +59,7 @@ const Navbar = () => {
       </div>
       {/* navbar */}
       <div className="bg-white text-black">
-        <div className="xl:mx-[100px] mx-5 my-5 lg:my-0 flex justify-between items-center">
+        <div className="xl:mx-[100px] mx-5 py-5 xl:py-0 lg:my-0 flex justify-between items-center">
           <Link href={"/"}>
             <img src="/web-logo.png" alt="website logo" className="w-[260px]" />
           </Link>
@@ -77,17 +77,58 @@ const Navbar = () => {
               >
                 About Us
               </Link>
-              <Link
-                className="nav my-4 hover:text-[#FF7350] duration-300"
-                href={"/courses"}
-              >
-                Courses
-              </Link>
-              <Link
-                className="nav my-4 hover:text-[#FF7350] duration-300"
-                href={"/pages"}
-              >
-                Pages
+              <div className="nav my-4 duration-300">
+                <div className="dropdown dropdown-hover">
+                  <label
+                    tabIndex={0}
+                    className="bg-transparent text-black border-0"
+                  >
+                    Course
+                  </label>
+                  <ul
+                    tabIndex={0}
+                    className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+                  >
+                    <li>
+                      <Link href={"/courses"} className="hover:text-[#FF7350]">
+                        Our Courses
+                      </Link>
+                    </li>
+                    <li>
+                      <a className="hover:text-[#FF7350]">Course Details</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <Link className="nav my-4 duration-300" href={"/pages"}>
+                <div className="dropdown dropdown-hover">
+                  <label
+                    tabIndex={0}
+                    className="bg-transparent text-black border-0"
+                  >
+                    Pages
+                  </label>
+                  <ul
+                    tabIndex={0}
+                    className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+                  >
+                    <li>
+                      <a className="hover:text-[#FF7350]">Events</a>
+                    </li>
+                    <li>
+                      <a className="hover:text-[#FF7350]">Gallery</a>
+                    </li>
+                    <li>
+                      <a className="hover:text-[#FF7350]">Picnic</a>
+                    </li>
+                    <li>
+                      <a className="hover:text-[#FF7350]">FAQ</a>
+                    </li>
+                    <li>
+                      <a className="hover:text-[#FF7350]">Teacher</a>
+                    </li>
+                  </ul>
+                </div>
               </Link>
               <Link
                 className="nav my-4 hover:text-[#FF7350] duration-300"
@@ -111,7 +152,7 @@ const Navbar = () => {
               ) : (
                 <button
                   onClick={() => signOut(auth)}
-                  className="nav my-4 text-red-500 duration-300"
+                  className="p-2 text-red-500 duration-300 border-2 border-red-500 rounded-lg"
                 >
                   Sign Out
                 </button>
@@ -192,6 +233,23 @@ const Navbar = () => {
                   >
                     Contact
                   </Link>
+                </li>
+                <li>
+                  {!user ? (
+                    <Link
+                      className="nav my-4 bg-transparent hover:text-[#FF7350] duration-300"
+                      href={"/login"}
+                    >
+                      Log In
+                    </Link>
+                  ) : (
+                    <button
+                      onClick={() => signOut(auth)}
+                      className="nav my-4 text-red-500 duration-300"
+                    >
+                      Sign Out
+                    </button>
+                  )}
                 </li>
               </ul>
             )}
