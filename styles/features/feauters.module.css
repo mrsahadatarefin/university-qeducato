@@ -1,0 +1,30 @@
+.features_text{
+    background-color: rgb(46, 69, 81);
+    color: white;
+    max-width: 758px;
+  }
+.features_text p{
+    color: rgba(191, 213, 227, 0.906);
+  }
+.logo_text h2{
+    font-size: 27px;
+    font-weight: 700;
+  }
+.logo_text img{
+    margin-left: 14px;
+    margin-top: 14px;
+    width:40px;
+    height: 40px;
+  }
+.bg{
+  background-color: tomato;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  }
+.features_img{
+    max-width: 761px;
+  }
+.features_img img{
+    height: 654px;
+  }

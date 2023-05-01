@@ -1,3 +1,10 @@
+import { Inter } from "next/font/google";
+import Feautures from "@/components/features/Feautures";
+import { GetServerSideProps, GetStaticProps } from "next";
+import Events from "@/components/features/Events";
+import Scholarship from "@/components/features/Scholarship";
+import Every_contack from "@/components/features/Every_contack";
+  
 import WereQeducato from "../components/WereQeducato/WereQeducato";
 import SearchForCourse from "../components/SearchForCourse/SearchForCourse";
 import AdmissionAid from "../components/Admission&Aid/AdmissionAid";
@@ -27,7 +34,12 @@ export default function Home({ data }: any) {
       <UpComing data={data}></UpComing>
       <InstructorSec data={data}></InstructorSec>
       <VisitCenter></VisitCenter>
-
+      
+       <Feautures />
+      <Events data={data} />
+      <Scholarship />
+      <Every_contack />
+      
     </main>
   );
 
@@ -45,5 +57,17 @@ export async function getStaticProps() {
     props: {
       data: data.data
     }
+  }
+}
+
+
+//events fetch data
+export const getServerSideProps: GetStaticProps = async ()=>{
+  const res = await fetch('http://localhost:3000/api/data')
+  const data = await res.json()
+  return{
+      props:{
+         data
+      }
   }
 }
