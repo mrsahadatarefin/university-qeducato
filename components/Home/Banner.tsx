@@ -10,7 +10,7 @@ const Banner = () => {
             <h1 className="pt-3 pr-3">WELCOME TO QEDUCATO</h1>
             <p className="text-[#FF7350]">________</p>
           </div>
-          <h2 className="text-6xl w-3/5 mt-7 font-bold text-white">
+          <h2 className="text-3xl xl:text-6xl w-3/5 mt-7 font-bold text-white">
             Education is the best key success in life
           </h2>
           <p className=" text-white w-1/2 mt-7 font-semibold">
@@ -22,7 +22,7 @@ const Banner = () => {
             Contact Us
           </button>
         </div>
-        <div className="absolute bottom-5 grid grid-cols-1 lg:grid-cols-3 gap-4 text-white mt-10 xl:mx-[100px]">
+        <div className="hidden absolute bottom-5 xl:grid grid-cols-1 lg:grid-cols-3 gap-4 text-white mt-10 xl:mx-[100px]">
           <div className="flex bg-[#125875] hover:bg-[#FF7350] duration-300 p-5 gap-5 rounded-lg">
             <div>
               <img src="/sve-icon4.png" alt="book png" />
