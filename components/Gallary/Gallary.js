@@ -21,8 +21,8 @@ const Gallary = ({ data }) => {
                     <button className="btn btn-active btn-ghost  text-black">Finance</button>
                 </div>
             </div>
-            <div className='m-20 p-10'>
-                <div className=' grid grid-cols-3 gap-6'>
+            <div className='mt-20 max-w-[1444px] m-auto p-10'>
+                <div className=' grid lg:grid-cols-3 gap-6   grid-cols-1'>
                     {/* {
                         data ? (<div> */}
                     {

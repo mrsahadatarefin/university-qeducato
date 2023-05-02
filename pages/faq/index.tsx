@@ -10,8 +10,7 @@ import ScholarshipPrograms from "@/components/scholarshipPrograms/ScholarshipPro
 import CampusTour from "@/components/CampusTour/CampusTour";
 
 import CompanyLogo from "@/components/companyLogo/CompanyLogo";
-
-
+import Testimonial from "@/components/Testimonial/Testimonial";
 
 
 
@@ -22,20 +21,15 @@ const about = () => {
   const [box3, setBox3] = useState(false);
   const [box4, setBox4] = useState(false);
   return (
-    <div>
+    <div className="mb-20">
       {/* Banner */}
-      <div className=" relative  saturate-50 ">
-        <Image src={img1} alt=" " className="h-[600px] about bg-cover bg-center"></Image>
-      </div>
-      <div className="  absolute left-[12%] lg:left-[50%] top-[25%]    ">
-        <h2 className="text-6xl font-bold text-white "> About Us</h2>
-      </div>
+      
 
       {/* A Few Words About the University */}
 
-    <AboutOurUniversity/>
+    
       {/* Scholarship Programs */}
-      <ScholarshipPrograms/>
+     
       <div className="mt-20 max-w-[1400px]  m-auto ">
        <div>
 
@@ -327,9 +321,7 @@ const about = () => {
        </div>
        
       </div>
-      <CampusTour/>
-    
-     <CompanyLogo/>
+     
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import WereQeducato from "../components/WereQeducato/WereQeducato";
 import SearchForCourse from "../components/SearchForCourse/SearchForCourse";
 import AdmissionAid from "../components/Admission&Aid/AdmissionAid";
-import Testimonial from "../components/Testimonial/testimonial";
+
 import Gallary from "../components/Gallary/Gallary";
 import LanguageSec from "../components/LanguageSec/LanguageSec";
 import UpComing from "../components/UpComing/UpComing";
@@ -10,23 +10,50 @@ import VisitCenter from "../components/VisitCenter/VisitCenter";
 import Navbar from "@/components/Shared/Navbar";
 import Banner from "@/components/Home/Banner";
 import Footer from "@/components/Shared/Footer";
+import AboutOurUniversity from "@/components/aboutOurUniversity/AboutOurUniversity";
+import Feautures from "@/components/fetaures/Fetaures";
+import Scholarship from "@/components/scholarship/SchoLarship";
+import Every_contack from "@/components/EveryContack/EveryContack";
+import CompanyLogo from "@/components/companyLogo/CompanyLogo";
+import Subscribe from "./subscribe/Subscribe";
+import CampusTour from "@/components/CampusTour/CampusTour";
+import CampusFacilities from "@/components/campusFacilities/CampusFacilities";
+import Testimonial from "@/components/Testimonial/Testimonial";
+import AppStore from "@/components/AppStore/AppStore";
 
 
-const inter = Inter({ subsets: ["latin"] });
+
+
+// const inter = Inter({ subsets: ["latin"] });
 
 export default function Home({ data }: any) {
   console.log(data)
   return (
     <main className="bg-white">
-      <WereQeducato></WereQeducato>
-      <Testimonial></Testimonial>
+      <Banner/>
+     
+      <AboutOurUniversity/>
+      <Feautures/>
+      
+      <CampusFacilities/>
+      
+      <Testimonial/>
       <SearchForCourse></SearchForCourse>
+      
       <AdmissionAid></AdmissionAid>
       <Gallary data={data}></Gallary>
+     
       <LanguageSec></LanguageSec>
+      <Scholarship/>
       <UpComing data={data}></UpComing>
+      <CompanyLogo/>
+      <Every_contack/>
       <InstructorSec data={data}></InstructorSec>
+      <AppStore/>
       <VisitCenter></VisitCenter>
+      
+      <Subscribe/>
+     
 
     </main>
   );
@@ -47,3 +74,20 @@ export async function getStaticProps() {
     }
   }
 }
+
+
+
+
+
+
+
+// export const getServerSideProps: GetStaticProps = async ()=>{
+//   const res = await fetch('http://localhost:3000/api/data')
+//   const data = await res.json()
+//   return{
+//       props:{
+//          data
+//       }
+//   }
+// }
+

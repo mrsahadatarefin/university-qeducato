@@ -12,7 +12,7 @@ const Testimonial = () => {
         Testimonial
       </p>
       <h2 className="text-5xl text-black text-center font-bold mb-10">
-        What Our Clients Says
+        What Our students  Says
       </h2>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2">
