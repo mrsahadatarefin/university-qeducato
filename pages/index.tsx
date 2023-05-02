@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Inter } from "next/font/google";
 import WereQeducato from "../components/WereQeducato/WereQeducato";
 import SearchForCourse from "../components/SearchForCourse/SearchForCourse";
@@ -9,6 +8,7 @@ import LanguageSec from "../components/LanguageSec/LanguageSec";
 import UpComing from "../components/UpComing/UpComing";
 import InstructorSec from "../components/InstructorSec/InstructorSec";
 import VisitCenter from "../components/VisitCenter/VisitCenter";
+import Events from "../components/Events/Events";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +25,7 @@ export default function Home({ data }: any) {
       <UpComing data={data}></UpComing>
       <InstructorSec data={data}></InstructorSec>
       <VisitCenter></VisitCenter>
+      <Events data={data}></Events>
     </main>
   );
 }
