@@ -80,7 +80,7 @@ const index = () => {
       <div className=" py-10 rounded-lg " style={{ backgroundColor: "#e7f0f8" }}>
         <div className=" text-center font-bold">Contact Us</div>
         <div className="mt-3 text-center text-4xl font-bold">Custom Inqure Form</div>
-        <div className="p-8">
+        <div className="p-8 max-w-[1444px] m-auto">
           <div className="flex gap-4">
             <input type="Name" name="name" className="mt-1 block w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 placeholder-slate-400 shadow-sm placeholder:font-semibold placeholder:text-gray-500 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm" placeholder="Your Name *" />
             <input type="email" name="email" className="mt-1 block w-1/2 rounded-md border border-slate-300 bg-white px-3 py-4 placeholder-slate-400 shadow-sm placeholder:font-semibold placeholder:text-gray-500 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm" placeholder="Your Email *" />

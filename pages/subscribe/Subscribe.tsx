@@ -1,12 +1,12 @@
 import React from "react";
 
-const index = () => {
+const Subscribe = () => {
   return (
     <div>
-      <div className="p-6 bg-blue-eyes" style={{ backgroundColor: "#125875" }}>
-        <div className="flex flex-wrap items-center w-full max-w-5xl p-5   mx-auto text-left   rounded lg:flex-nowrap md:p-8 ">
+      <div className="p-6 bg-blue-eyes  mt-20" style={{ backgroundColor: "#125875" }}>
+        <div className="flex flex-wrap items-center  w-full max-w-5xl p-5   mx-auto text-left   rounded lg:flex-nowrap md:p-8 ">
           <div className="flex-1 w-full mb-5 md:mb-0 md:pr-5 lg:pr-10 md:w-1/2">
-            <h3 className="mb-2 text-3xl font-bold text-white ">Subscribe For Newsletter</h3>
+            <h3 className="mb-2 text-4xl font-bold text-white ">Subscribe For Newsletter</h3>
             <p className="text-white">Manage Your Business With Our Software</p>
           </div>
           <div className="w-full px-1 flex-0 md:w-auto lg:w-1/2">
@@ -27,4 +27,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Subscribe;

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import styles from '../../styles/features/events.module.css'
-import { GetServerSideProps } from 'next';
+
 import {FaGraduationCap} from 'react-icons/fa'
 import {BsArrowRight} from 'react-icons/bs'
 
@@ -15,7 +15,7 @@ const Events = ({data}: any) => {
                 
                 <h2 className={`${styles.upcoming} text-center py-2`}>Upcoming Events</h2>
            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-           {
+           {/* {
             data.data.info.map(event => <div key={event.id} className="events mt-6 py-2 p-4 ">
                 <div className={`${styles.event} card`}>
                     <img src={event.image} alt="" />
@@ -33,7 +33,7 @@ const Events = ({data}: any) => {
                     </div>
                 </div>
             </div>)
-           }   
+           }    */}
            </div>
              
             </div>

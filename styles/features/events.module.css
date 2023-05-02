@@ -53,7 +53,7 @@
     background-color: rgb(15, 25, 42);
     transition: .6s;
     color: white;
-    cursor: pointer;; 
+    cursor: pointer;;
 }
 /* media */
 @media screen and (max-width: 400px) {
@@ -91,6 +91,10 @@
     color: white;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> develop
 .school{
     max-width: 1300px;
     margin: 0 auto;
@@ -106,6 +110,9 @@
     color: white;
     margin-top: 20px;
 }
+
+
+
 
 
 
@@ -134,5 +141,5 @@
 .eventDetails{
     max-width: 1200px;
     margin: 0 auto;
-    
+   
 }

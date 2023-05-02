@@ -5,6 +5,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import Loading from "./Loading";
 import { signOut } from "firebase/auth";
 
+
 const Navbar = () => {
   const [closeNavbar, setCloseNavbar] = useState(false);
   const [user, loading] = useAuthState(auth);
@@ -14,7 +15,7 @@ const Navbar = () => {
   return (
     <div>
       {/* navbar header */}
-      <div className="bg-[#125875] text-black xl:flex justify-between lg:pr-[100px] hidden">
+      <div className="bg-[#125875] text-black xl:flex justify-between lg:pr-[100px] hidden  ">
         <div className="flex items-center bg-[#FF7350] text-white lg:px-[100px] py-7">
           <h2>Follow Us:- </h2>
           <div className="flex gap-4 px-2 text-2xl">
@@ -44,7 +45,7 @@ const Navbar = () => {
               <p className="font-bold">+8801987654321</p>
             </div>
           </div>
-          <div className="flex text-white">
+          <div className="flex text-white ">
             <img
               src="/mailing.png"
               alt="email address image"
@@ -59,11 +60,11 @@ const Navbar = () => {
       </div>
       {/* navbar */}
       <div className="bg-white text-black">
-        <div className="xl:mx-[100px] mx-5 my-5 lg:my-0 flex justify-between items-center">
+        <div className="xl:mx-[100px] mx-5 py-5 xl:py-0 lg:my-0 flex justify-between items-center">
           <Link href={"/"}>
             <img src="/web-logo.png" alt="website logo" className="w-[260px]" />
           </Link>
-          <div className="text-xl lg:flex hidden items-center">
+          <div className="text-xl lg:flex hidden items-center ">
             <div className="flex gap-4 mr-2">
               <Link
                 className="nav my-4 hover:text-[#FF7350] duration-300"
@@ -77,17 +78,60 @@ const Navbar = () => {
               >
                 About Us
               </Link>
-              <Link
-                className="nav my-4 hover:text-[#FF7350] duration-300"
-                href={"/courses"}
-              >
-                Courses
+              <Link className="nav my-4 duration-300" href={"/courses"}>
+                <div className="dropdown dropdown-hover">
+                  <label
+                    tabIndex={0}
+                    className="bg-transparent text-black border-0"
+                  >
+                    Course
+                  </label>
+                  <ul
+                    tabIndex={0}
+                    className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+                  >
+                    <li>
+                      <a className="hover:text-[#FF7350]">Our Courses</a>
+                    </li>
+                    <li>
+                      <a className="hover:text-[#FF7350]">Course Details</a>
+                    </li>
+                  </ul>
+                </div>
               </Link>
-              <Link
-                className="nav my-4 hover:text-[#FF7350] duration-300"
-                href={"/pages"}
-              >
-                Pages
+              <Link className="nav my-4 duration-300" href={"/pages"}>
+                <div className="dropdown dropdown-hover">
+                  <label
+                    tabIndex={0}
+                    className="bg-transparent text-black border-0"
+                  >
+                    Pages
+                  </label>
+                  <ul
+                    tabIndex={0}
+                    className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+                  >
+                    <li>
+                      <a className="hover:text-[#FF7350]">Events</a>
+                    </li>
+                    <li>
+                      <a className="hover:text-[#FF7350]">Gallery</a>
+                    </li>
+                   <Link href={'faq'}>
+                   
+                    
+                   <li>
+                      <a className="hover:text-[#FF7350]">FAQ</a>
+                    </li>
+                   </Link>
+                   <Link href={'teacher'}>
+                   <li>
+                      <a className="hover:text-[#FF7350]">Teacher</a>
+                    </li>
+                   
+                   </Link>
+                  </ul>
+                </div>
               </Link>
               <Link
                 className="nav my-4 hover:text-[#FF7350] duration-300"
@@ -111,7 +155,7 @@ const Navbar = () => {
               ) : (
                 <button
                   onClick={() => signOut(auth)}
-                  className="nav my-4 text-red-500 duration-300"
+                  className="p-2 text-red-500 duration-300 border-2 border-red-500 rounded-lg"
                 >
                   Sign Out
                 </button>
@@ -193,6 +237,23 @@ const Navbar = () => {
                     Contact
                   </Link>
                 </li>
+                <li>
+                  {!user ? (
+                    <Link
+                      className="nav my-4 bg-transparent hover:text-[#FF7350] duration-300"
+                      href={"/login"}
+                    >
+                      Log In
+                    </Link>
+                  ) : (
+                    <button
+                      onClick={() => signOut(auth)}
+                      className="nav my-4 text-red-500 duration-300"
+                    >
+                      Sign Out
+                    </button>
+                  )}
+                </li>
               </ul>
             )}
           </div>
@@ -202,4 +263,10 @@ const Navbar = () => {
   );
 };
 
+
 export default Navbar;
+
+
+
+
+
