@@ -1,12 +1,32 @@
+
+.events_main {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.our_event {
+
 .events_main{
     max-width: 1300px;
     margin: 0 auto;
 }
 .our_event{
+
     color: tomato;
     font-size: 23px;
     margin: 0 auto;
     width: 300px;
+
+
+
+}
+
+.upcoming {
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.event img {
 
 }
 .upcoming{
@@ -14,22 +34,38 @@
     font-weight: 700;
 }
 .event img{
+
     width: 390px;
     height: 300px;
     position: relative;
 }
+
+
+.event {
+
 .event{
+n
     width: 390px;
     height: 560px;
     background-color: rgba(238, 238, 238, 0.724);
 }
+
+
+.event h2 {
+
 .event h2{
+
     font-size: 25px;
     font-weight: 600;
     padding: 10px 0;
     padding-top: 20px;
 }
+
+
+.date {
+
 .date{
+
     width: 100px;
     height: 70px;
     background-color: tomato;
@@ -39,6 +75,22 @@
     color: white;
     text-align: center;
 }
+
+
+.date h5 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.date p {
+    font-size: 13px;
+}
+
+.address {
+    color: tomato;
+}
+
+
 .date h5{
     font-size: 25px;
     font-weight: 700;
@@ -49,10 +101,26 @@
 .address {
     color: tomato;
 }
+n
 .event:hover {
     background-color: rgb(15, 25, 42);
     transition: .6s;
     color: white;
+
+    cursor: pointer;
+    ;
+}
+
+/* media */
+@media screen and (max-width: 400px) {
+
+    .event,
+    .event img {
+        width: 300px;
+    }
+
+    .date {
+
     cursor: pointer;;
 }
 /* media */
@@ -61,6 +129,7 @@
         width: 300px;
     }
     .date{
+
         width: 100px;
         height: 70px;
         background-color: tomato;
@@ -71,6 +140,18 @@
         text-align: center;
     }
 }
+
+
+/* scholar-component */
+.scholar {
+    background-color: rgb(15, 25, 42);
+    color: white;
+
+
+}
+
+.scholar h1 {
+
 /* scholar-component */
 .scholar{
     background-color: rgb(15, 25, 42);
@@ -78,23 +159,50 @@
 
 }
 .scholar h1{
+
     font-size: 45px;
     font-weight: 700;
     padding: 10px 0;
 }
+
+
+.scholar p {
+    font-size: 19px;
+}
+
+.scholar button {
+
 .scholar p{
     font-size: 19px;
 }
 .scholar button{
+
     background-color: tomato;
     margin-top: 50px;
     color: white;
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> develop
+
+.school {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.school_text {
+    max-width: 560px;
+}
+
+.school_text h4 {
+    color: tomato;
+}
+
+.school_text button {
+
+
+
+
+
 .school{
     max-width: 1300px;
     margin: 0 auto;
@@ -106,6 +214,7 @@
     color: tomato;
 }
 .school_text button{
+
     background-color: tomato;
     color: white;
     margin-top: 20px;
@@ -118,15 +227,24 @@
 
 /*  */
 /* eventsDetails-components */
+
+
+
 .header{
     height: 500px;
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.20)),url('https://www.exeter.ac.uk/media/universityofexeter/studying/images/responsiveimages/16095.jpg');
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+
+
 .menu{
+
     width: 220px;
     height: 70px;
     background-color: tomato;
@@ -134,12 +252,16 @@
     margin-top: 40px;
     border-radius: 100px;
 }
-.menu p{
-  margin-top: 20px;
-   
+
+
+.menu p {
+    margin-top: 20px;
+
 }
-.eventDetails{
+
+.eventDetails {
     max-width: 1200px;
     margin: 0 auto;
-   
+
 }
+
