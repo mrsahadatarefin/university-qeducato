@@ -1,0 +1,83 @@
+.header{
+    height: 500px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.20)),url('https://www.exeter.ac.uk/media/universityofexeter/studying/images/responsiveimages/16095.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+.header h1{
+    font-size: 52px;
+    font-weight: 700;
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+}
+.menu{
+    max-width: 480px;
+    height: 63px;
+    background-color: tomato;
+    margin: 0 auto;
+    border-radius: 100px;
+
+}
+.content{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text{
+    max-width: 820px;
+}
+.form{
+    width: 330px;
+    border: 1px solid rgba(128, 128, 128, 0.358);
+    height: 480px;
+    z-index: 10;
+    background-color: white;
+}
+.form p{
+    border: 1px solid rgba(128, 128, 128, 0.212);
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.content span{
+    color: tomato;
+    margin-top: 5px;
+    font-size: 20px;
+}
+.form button{
+    background-color: tomato;
+    margin-top: 20px;
+    border: none;
+}
+.timeset{
+    width: 100%;
+    background-color: rgb(23, 35, 42);
+    justify-content: space-evenly;
+}
+.timeset h2{
+    font-size: 45px;
+    color: white;
+    margin: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.timeset span{
+    font-size: 16px;
+    color: gray;
+    font-weight: 500;
+}
+.social a{
+    margin: 9px;
+    border-radius: 50%;
+    font-size: 30px;
+   color: rgb(13, 13, 45);
+}
+.social a:hover{
+    color: tomato;
+    transition: .6s;
+}

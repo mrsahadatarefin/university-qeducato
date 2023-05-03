@@ -11,7 +11,7 @@ const UpCard = ({ item }) => {
                 <h2 className="card-title text-slate-900">${price}</h2>
                 <p className='text-slate-700'>{name}</p>
                 <div className="card-actions">
-                    <button className="btn btn-primary">Buy Now</button>
+                    <button className="bg-[#ff7350] px-6 py-3 rounded-md text-white font-semibold">Buy Now</button>
                 </div>
             </div>
         </div>

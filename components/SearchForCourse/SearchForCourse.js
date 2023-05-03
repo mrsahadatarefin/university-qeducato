@@ -2,15 +2,15 @@ import React from 'react';
 
 const SearchForCourse = () => {
     return (
-        <div className="hero min-h-screen bg-base-200" style={{ backgroundImage: `url("https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/search_bg.png")` }}>
+        <div className="hero min-h-screen bg-base-200 mt-20" style={{ backgroundImage: `url("https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/search_bg.png")` }}>
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <div className="text-center w-2/6 lg:text-left">
 
                 </div>
                 <div className="card flex-shrink-0 w-4/6 shadow-2xl ">
                     <div className="card-body">
-                        <h1 className="lg:text-7xl md:text-5xl text-3xl font-bold">Search For Course</h1>
-                        <p className="py-6 text-xl ">Our community is being called to reimagine the future. As the only university where a renowned design school comes together with premier colleges, we are making learning more relevant and transformational.</p>
+                        <h1 className="lg:text-7xl md:text-5xl text-3xl font-bold text-white">Search For Course</h1>
+                        <p className="py-6 text-xl text-gray-300 ">Our community is being called to reimagine the future. As the only university where a renowned design school comes together with premier colleges, we are making learning more relevant and transformational.</p>
                         <div className="grid lg:grid-cols-2 grid-cols-1">
                             <input type="text" placeholder="Your Name" className="input input-bordered textarea-ghost bg-white w-full max-w-xs my-2 ms-5" />
                             <input type="text" placeholder="Your Email" className="input input-bordered textarea-ghost bg-white w-full max-w-xs my-2 ms-5" />
