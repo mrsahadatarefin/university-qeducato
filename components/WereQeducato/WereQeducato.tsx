@@ -19,7 +19,7 @@ const WereQeducato = () => {
                     <div className="modal">
                         <div className="modal-box w-7/12 max-w-5xl">
                             <label htmlFor="my-modal-5" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-                            <ReactPlayer className='w-full' controls url='https://www.youtube.com/watch?v=cLRztK1zE6s' />
+                            <ReactPlayer className='w-full' controls url='https://www.youtube.com/watch?v=-jV1c1cm0sQ' />
 
                         </div>
                     </div>
