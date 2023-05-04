@@ -127,9 +127,13 @@ const Navbar = () => {
                     tabIndex={0}
                     className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
                   >
-                    {/* <li>
+                     <Link href={'events'}>
+                   <li>
                       <a className="hover:text-[#FF7350]">Events</a>
-                    </li> */}
+                    </li>
+                   
+                   </Link>
+                    
                     <Link href={'gallary'}>
                    <li>
                       <a className="hover:text-[#FF7350]">Gallery</a>
