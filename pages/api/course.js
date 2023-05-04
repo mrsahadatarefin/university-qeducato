@@ -1,13 +1,10 @@
-import clientPromise from "../../lib/MongoDB";
-
-export default async (req, res) => {
-  try {
-    const client = await clientPromise;
-    const db = client.db("Qeucato");
-
-    const course = await db.collection("courses").find({}).toArray();
-    res.json(course);
-  } catch (e) {
-    console.error(e);
-  }
-};
+import * as fs from 'fs';
+export default function handler(req,res){
+  
+ fs.readdir('courses',(err,data)=>{
+  res.status(200).json(data)
+ })
+  
+  
+  
+}

@@ -1,21 +1,39 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import auth from "../firebase/firebase.config";
 import { useAuthState } from "react-firebase-hooks/auth";
 import Loading from "./Loading";
 import { signOut } from "firebase/auth";
 
 
+
 const Navbar = () => {
   const [closeNavbar, setCloseNavbar] = useState(false);
+  const [stickyClass, setStickyClass] = useState("relative");
+  useEffect(() => {
+    window.addEventListener("scroll", stickNavbar);
+    
+    return () => {
+      window.removeEventListener("scroll", stickNavbar);
+    };
+  }, []);
+  const stickNavbar = () => {
+    if (window !== undefined) {
+      let windowHeight = window.scrollY;
+      windowHeight > 20
+        ? setStickyClass("fixed top-0 left-0 z-50  ")
+        : setStickyClass("relative");
+    }
+  };
+
   const [user, loading] = useAuthState(auth);
   if (loading) {
     return <Loading />;
   }
   return (
-    <div>
+    <div >
       {/* navbar header */}
-      <div className="bg-[#125875] text-black xl:flex justify-between lg:pr-[100px] hidden  ">
+      <div className="bg-[#125875] text-black xl:flex justify-between lg:pr-[100px] hidden   ">
         <div className="flex items-center bg-[#FF7350] text-white lg:px-[100px] py-7">
           <h2>Follow Us:- </h2>
           <div className="flex gap-4 px-2 text-2xl">
@@ -59,10 +77,10 @@ const Navbar = () => {
         </div>
       </div>
       {/* navbar */}
-      <div className="bg-white text-black">
+      <div className={`bg-white text-black w-full ${stickyClass} duration-500 `}>
         <div className="xl:mx-[100px] mx-5 py-5 xl:py-0 lg:my-0 flex justify-between items-center">
           <Link href={"/"}>
-            <img src="/web-logo.png" alt="website logo" className="w-[260px]" />
+            <img src='/web-logo.png' alt="website logo" className="w-[260px]" />
           </Link>
           <div className="text-xl lg:flex hidden items-center ">
             <div className="flex gap-4 mr-2">
@@ -93,9 +111,7 @@ const Navbar = () => {
                     <li>
                       <a className="hover:text-[#FF7350]">Our Courses</a>
                     </li>
-                    <li>
-                      <a className="hover:text-[#FF7350]">Course Details</a>
-                    </li>
+                   
                   </ul>
                 </div>
               </Link>
@@ -111,12 +127,15 @@ const Navbar = () => {
                     tabIndex={0}
                     className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
                   >
-                    <li>
+                    {/* <li>
                       <a className="hover:text-[#FF7350]">Events</a>
-                    </li>
-                    <li>
+                    </li> */}
+                    <Link href={'gallary'}>
+                   <li>
                       <a className="hover:text-[#FF7350]">Gallery</a>
                     </li>
+                   
+                   </Link>
                    <Link href={'faq'}>
                    
                     

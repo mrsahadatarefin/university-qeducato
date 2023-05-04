@@ -123,7 +123,7 @@ const Footer = () => {
         </div>
         <div className="bg-[#FF7350] py-5 text-white font-semibold">
           <div className="xl:mx-[100px] mx-5 xl:flex justify-between">
-            <img className="h-7" src="/f_logo.png" alt="" />
+            <img className="h-7" src="/web-logo.png" alt="" />
             <div>Copyright &#169; Qeducato {year}. All right reserved.</div>
           </div>
         </div>

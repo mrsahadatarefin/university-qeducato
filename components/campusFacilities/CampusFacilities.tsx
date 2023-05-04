@@ -2,7 +2,7 @@ import React from "react";
 
 const CampusFacilities = () => {
   return (
-    <div style={{ backgroundColor: "#f0f7ff" } } className="mt-20 max-w-[1444px] m-auto">
+    <div  style={{ backgroundColor: "#f0f7ff" } } className="mt-20 max-w-[1444px] m-auto">
       <h1 className="mb-4 text-xl font-bold text-black sm:text-2xl lg:text-xl xl:text-4xl pl-10 pt-10 text-center  ">Campus Facilities</h1>
       <div className="-mx-4 flex flex-wrap p-8">
         <div className="w-full px-4 md:w-1/2 lg:w-1/3  " style={{ backgroundColor: "#f0f7ff" }}>

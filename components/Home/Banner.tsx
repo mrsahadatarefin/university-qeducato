@@ -3,20 +3,20 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div>
+    <div >
       <div className="relative">
         <img
           className="xl:w-full min-h-[400px]"
           src="/slider_bg_01.png"
           alt="banner images"
         />
-        <div className="absolute xl:top-14 top-0 xl:mx-[100px]">
-          <div className="text-white text-2xl flex font-semibold">
+        <div className="absolute xl:top-14 top-0 xl:mx-[100px]" data-aos="fade-right">
+          <div className="text-white text-2xl flex font-semibold ">
             <h1 className="pt-3 pr-3">WELCOME TO QEDUCATO</h1>
             <p className="text-[#FF7350]">________</p>
           </div>
           <h2
-            data-aos="fade-left"
+           
             className="text-3xl xl:text-6xl xl:w-3/5 mt-7 font-bold text-white"
           >
             Education is the best key success in life

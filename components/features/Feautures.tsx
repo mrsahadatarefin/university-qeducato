@@ -3,8 +3,8 @@ import styles from '../../styles/features/feauters.module.css'
 
 const Feautures = () => {
     return (
-        <div>         
-            <div className={`${styles.features_main} flex flex-wrap py-12`}>
+        <div  className='w-full mt-20' data-aos="fade-up">         
+            <div className= "max-w-[1444px] m-auto flex flex-col lg:flex-row w-full"  >
                 <div className={`${styles.features_text} p-1 lg:p-9`} >
                     <div className="p-4 mx-0 lg:mx-6">
                     <h1 className='text-5xl font-bold'>Our Best Features</h1>
@@ -12,7 +12,7 @@ const Feautures = () => {
                     </div>
                     <div className={`${styles.logo_text} flex flex-wrap gap-5 py-4 p-2 mx-0 lg:mx-6`}>
                         <div className={styles.bg}>
-                         <img src="https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/fea-icon01.png" alt="" />    
+                         <img src="https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/fea-icon01.png" alt="" className='w-full' />    
                         </div>                          
                         <div className="">               
                         <h2>Skilled Teachers</h2>
@@ -39,7 +39,7 @@ const Feautures = () => {
                     </div>
                 </div>
                 <div className={`${styles.features_img}`}>
-                    <img src="https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/steps-img.png" alt="" />
+                    <img src="https://wpdemo.zcubethemes.com/qeducato/wp-content/uploads/2023/03/steps-img.png" alt="" className='w-full' />
                                    
                 </div>
             </div>

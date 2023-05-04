@@ -5,7 +5,7 @@ import { GetServerSideProps, GetStaticProps } from "next";
 import Scholarship from "@/components/features/Scholarship";
 import Every_contack from "@/components/features/Every_contack";
   
-import WereQeducato from "../components/WereQeducato/WereQeducato";
+
 import SearchForCourse from "../components/SearchForCourse/SearchForCourse";
 import AdmissionAid from "../components/Admission&Aid/AdmissionAid";
 
@@ -24,6 +24,8 @@ import CampusTour from "@/components/CampusTour/CampusTour";
 import CampusFacilities from "@/components/campusFacilities/CampusFacilities";
 import Testimonial from "@/components/Testimonial/Testimonial";
 import AppStore from "@/components/AppStore/AppStore";
+import Head from "next/head";
+
 
 
 
@@ -34,13 +36,15 @@ export default function Home({ data }: any) {
   console.log(data)
   return (
     <main className="bg-white">
+      
       <Banner/>
      
       <AboutOurUniversity/>
       <Feautures/>
       
       <CampusFacilities/>
-      
+    
+     
       <Testimonial/>
       <SearchForCourse></SearchForCourse>
       
@@ -51,13 +55,14 @@ export default function Home({ data }: any) {
       <UpComing data={data}></UpComing>
       <CompanyLogo/>
       <Every_contack/>
-      <InstructorSec data={data}></InstructorSec>
       <AppStore/>
+      <InstructorSec data={data}></InstructorSec>
+     
       <VisitCenter/>
-       
+    
       {/* <Events data={data} /> */}
-      <Scholarship />
-      <Every_contack />
+      
+      {/* <Every_contack /> */}
       <Subscribe/>
      
 

@@ -125,10 +125,10 @@ const login = () => {
             <div className="flex justify-center">
               <img className="w-1/2" src="/login-img.png" alt="login image" />
             </div>
-            <h2 className="text-3xl font-medium mt-5">Welcome to Qeducato.</h2>
+            <h2 className="text-3xl font-medium mt-5">Welcome to Scholar Bridge.</h2>
             <div className="flex justify-center">
               <p className="text-gray-700 mt-3 w-3/4">
-                Login to your Qeducato education account to access course
+                Login to your Scholar Bridge account to access course
                 materials, grades, and other important information. Don't have
                 an account yet? Sign up now to start your educational journey.
               </p>

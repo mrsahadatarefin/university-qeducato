@@ -4,7 +4,7 @@ import img2 from "../../public/assates/about_img_05.png";
 
 const AboutOurUniversity = () => {
     return (
-        <div>
+        <div data-aos="fade-up">
             <div className="mt-20  flex flex-col lg:flex-row   max-w-[1444px] mx-auto items-center justify-center  ">
         <div className=" px-0 lg:px-10 w-[50%] ">
           <Image src={img2} alt="about" className=" h-full"></Image>
