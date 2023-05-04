@@ -59,15 +59,14 @@ export default function Home({ data }: any) {
       <UpComing data={data}></UpComing>
       <CompanyLogo/>
       <Every_contack/>
-<<<<<<< HEAD
-=======
-      <InstructorSec data={data}></InstructorSec>
+
+      
 
       <VisitCenter></VisitCenter>
       <Events data={data}></Events>
 
 
->>>>>>> 61541b8388aa84539bf9ede7e44a088f9575225f
+
       <AppStore/>
       <InstructorSec data={data}></InstructorSec>
      
@@ -80,7 +79,7 @@ export default function Home({ data }: any) {
      
 
 
-
+   </main>
 
   );
 
