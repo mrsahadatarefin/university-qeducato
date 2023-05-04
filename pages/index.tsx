@@ -28,16 +28,9 @@ import AppStore from "@/components/AppStore/AppStore";
 import Head from "next/head";
 
 
-
-
-
-
-
-
-
-
 export default function Home({ data }: any) {
-  console.log(data)
+  console.log("data:: ", data);
+  
   return (
     <main className="bg-white">
       
@@ -88,9 +81,12 @@ export default function Home({ data }: any) {
 export async function getStaticProps() {
   const fs = require("fs/promises");
   const path = require("path");
-  const filePath = path.join(process.cwd(), '/data', '/data.json');
 
-  let data = await fs.readFile(filePath);
+  //Find the absolute path of the json directory
+  const filePath = path.join(process.cwd(), "/data", "/data.json");
+
+  //Read the json data file data.json
+  let data = await fs.readFile(filePath, 'utf8');
   data = JSON.parse(data);
 
   return {
@@ -100,25 +96,3 @@ export async function getStaticProps() {
   }
 }
 
-
-//events fetch data
-// export const getServerSideProps: GetStaticProps = async ()=>{
-//   const res = await fetch('http://localhost:3000/api/data')
-//   const data = await res.json()
-//   return{
-//       props:{
-//          data
-//       }
-//   }
-// }
-
-
-// export const getServerSideProps: GetStaticProps = async ()=>{
-//   const res = await fetch('http://localhost:3000/api/data')
-//   const data = await res.json()
-//   return{
-//       props:{
-//          data
-//       }
-//   }
-// }
