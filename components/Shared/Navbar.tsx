@@ -71,7 +71,7 @@ const Navbar = () => {
             />
             <div>
               <h2 className="text-sm">Email Now!</h2>
-              <p className="font-bold">info@qeducato.com</p>
+              <p className="font-bold">scholorbridge@gmail.com</p>
             </div>
           </div>
         </div>

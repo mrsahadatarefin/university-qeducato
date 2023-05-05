@@ -30,12 +30,11 @@ import Head from "next/head";
 
 export default function Home({ data }: any) {
   console.log("data:: ", data);
-  
+
   return (
     <main className="bg-white">
       
       <Banner/>
-     
       <AboutOurUniversity/>
       <Feautures/>
       
@@ -61,9 +60,10 @@ export default function Home({ data }: any) {
 
 
       <AppStore/>
+      
       <InstructorSec data={data}></InstructorSec>
      
-      <VisitCenter/>
+    
     
       {/* <Events data={data} /> */}
       

@@ -36,22 +36,22 @@ const index = () => {
                 <ul className="list-none">
                   <li className="mb-2">
                     <a href="#" className="text-gray-700 hover:text-gray-900">
-                      App
+                    Major in Economics
                     </a>
                   </li>
                   <li className="mb-2">
                     <a href="#" className="text-gray-700 hover:text-gray-900">
-                      Design
+                    Biochemistry
                     </a>
                   </li>
                   <li className="mb-2">
                     <a href="#" className="text-gray-700 hover:text-gray-900">
-                      Web Design
+                    Business Media
                     </a>
                   </li>
                   <li className="mb-2">
                     <a href="#" className="text-gray-700 hover:text-gray-900">
-                      Wordpress
+                    Corporate Finance
                     </a>
                   </li>
                 </ul>
