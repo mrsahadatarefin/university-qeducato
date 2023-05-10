@@ -12,7 +12,7 @@ const Banner = () => {
         />
         <div className="absolute xl:top-14 top-0 xl:mx-[100px]" data-aos="fade-right">
           <div className="text-white text-2xl flex font-semibold ">
-            <h1 className="pt-3 pr-3">WELCOME TO QEDUCATO</h1>
+            <h1 className="pt-3 pr-3">WELCOME TO Northen Lights university  </h1>
             <p className="text-[#FF7350]">________</p>
           </div>
           <h2

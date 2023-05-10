@@ -58,8 +58,24 @@ const EventDetails = () => {
                                                                              
                              <p className='py-4 p-4 font-semibold flex border-2'><span className='mx-3 text-[#ff7350] text-xl mt-1'><CiMail /> </span> yourmail@gmail.com</p>                                                    
                              <p className='py-4 p-4 font-semibold flex border-2'><span className='mx-3 text-[#ff7350] text-xl mt-1'> <IoMdCall /> </span> +91 705 2101 786</p>    
-                           <button className='btn btn-md text-white w-52 lg:mx-12 mx-1 border-none bg-[#ff7350] mt-10'>Buy Ticket <small className='text-2xl font-semibold mx-3'><BsArrowRight /></small> </button>                      
+                             <label htmlFor="my-modal" className='btn btn-md text-white w-52 lg:mx-12 mx-1 border-none bg-[#ff7350] mt-10'>Buy Ticket <small className='text-2xl font-semibold mx-3'><BsArrowRight /></small> </label>                      
                         </div>
+                        <input type="checkbox" id="my-modal" className="modal-toggle" />
+                        <div className="modal text-white ">
+                        <div className="modal-box  bg-[#125875] max-w-[410px]">
+                            <h3 className="font-bold text-lg">Congratulations!</h3>
+                           <div className="form mt-7">
+                            <input className='m-3 p-2 w-56 md:w-80 bg-white text-black' type="text" placeholder='Your Name' /> <br />
+                            <input className='m-3 p-2 w-56 md:w-80 bg-white text-black' type="email" placeholder='Your Email' /> <br />
+                            <input className='m-3 p-2 w-56 md:w-80 bg-white text-black' type="text" placeholder='Your Number' /> <br />
+                           </div>
+                            <div className="modal-action">
+                             <label htmlFor="my-modal" className='btn btn-md text-white w-56 md:w-80 mx-12 md:mx-8 border-none bg-[#ff7350] mt-6'>Submit</label>
+                            </div>
+                        </div>
+                        </div>
+
+
                     </div>
                 </div>            
         </div>
